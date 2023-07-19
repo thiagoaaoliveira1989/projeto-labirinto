@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  max-height: 100%;
+  text-align: center;
+}
+
+.gamer {
+  display: flex;
+  flex-direction: row;
+}
+
+.gamer-transition {
+  opacity: 0;
+  /* Começar com opacidade 0 (invisível) */
+  transition: opacity 0.5s;
+  /* Transição de 0.5 segundos para a propriedade de opacidade */
+}
+
+#container {
+  display: flex;
+  width: 600px;
+  height: 400px;
+  justify-content: center;
+
+  padding: 1rem;
+}
+
+#container-resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0 1.5rem 0;
+  margin: 1rem 0 1rem 0;
+}
+
+
+#labirinto {
+
+  max-width: 600px;
+  max-height: 400px;
+
+}
+
+.linha {
+  display: flex;
+}
+
+.celula {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  width: #fff;
+
+}
+
+.imgJogador {
+  width: 60px;
+  height: 60px;
+}
+
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.caminho {
+  background-color: #333;
+
+}
+
+.parede {
+  background-color: #696969;
+  color: #fff;
+}
+
+
+.jogador {
+  background-color: #333;
+  color: #fff;
+}
+
+.chegada {
+  background-color: #333;
+
+}
+
+#resultado,
+#btn-resetar-jogo {
+  display: none;
+}
+
+#btn-resetar-jogo {
+  /* Estilo do botão */
+  background-color: #e24141;
+  /* Cor de fundo do botão */
+  color: #fff;
+  /* Cor do texto do botão */
+  padding: 10px 20px;
+  /* Espaçamento interno do botão */
+  border: none;
+  /* Remover a borda do botão */
+  border-radius: 5px;
+  /* Arredondar as bordas do botão */
+  cursor: pointer;
+  /* Mostrar o cursor de mão ao passar sobre o botão */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  /* Sombra do botão */
+  transition: background-color 1s, box-shadow 0.3s;
+  /* Transições de animação */
+}
+
+#btn-resetar-jogo:hover {
+  /* Estilo quando o mouse estiver sobre o botão */
+  background-color: #bb0000;
+  /* Nova cor de fundo do botão */
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  /* Nova sombra do botão */
+}
