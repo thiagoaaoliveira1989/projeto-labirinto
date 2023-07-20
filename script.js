@@ -132,7 +132,7 @@ document.addEventListener("keydown", (e) => {
   } else {
     movimentos++;
 
-    console.log(movimentos)
+console.log(movimentos)
   }
 
 
@@ -171,6 +171,9 @@ function resetarLabirinto() {
   setTimeout(function () {
     // Criar o novo labirinto (você pode chamar a função que cria o labirinto aqui)
     criarLabirinto(modeloLabirinto);
+  
+    //movimentos para 0 novamente
+  movimentos = 0;
 
     // Definir a opacidade como 1 após um pequeno atraso (50ms) para fazer o labirinto reaparecer suavemente
     setTimeout(function () {
